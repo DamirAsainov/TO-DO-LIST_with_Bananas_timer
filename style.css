@@ -42,7 +42,7 @@ header a:hover,
     color: orange;
 }
 
-header .container {
+header .container-fluid {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -138,10 +138,9 @@ section {
 }
 .controller #reset{
     display: none;
-    
 }
 
-.bg{
+.bg, html{
     width: 100%;
     min-height: 100vh;
     background:  linear-gradient(135deg, orange, #D83F31);

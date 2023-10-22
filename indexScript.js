@@ -1,7 +1,7 @@
 let workTittle = document.getElementById('work');
 let chillTittle = document.getElementById('chill');
 
-let workTime = 1;
+let workTime = 15;
 let chillTime = 5;
 
 let seconds = "00";
@@ -18,7 +18,7 @@ function start(){
     document.getElementById('start').style.display = "none";
     document.getElementById('reset').style.display = "block";
 
-    seconds = 3;
+    seconds = 59;
 
     let workMinutes = workTime - 1;
     let chillMinute = chillTime - 1;
