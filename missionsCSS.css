@@ -1,0 +1,74 @@
+:root {
+    /* font-size: 63.5%; */
+}
+* {
+    font-family: Ubuntu, Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+header {
+    background-color: #D83F31;
+    color: white;
+    height: 100px;
+}
+
+header .navbr-brand {
+    color: white;
+    font-family: Ubuntu;
+    font-size: 42px;
+    font-weight: 800;
+}
+
+header .nav {
+    display: flex;
+    justify-content: space-between;
+    min-width: 600px;
+
+}
+
+header a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+header img {
+    width: 75px;
+}
+
+header a:hover,
+.navbr-brand:hover {
+    color: orange;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+i {
+    font-size: 3.2rem;
+}
+li i{
+    font-size: 2rem;
+}
+
+
+ul li{
+    list-style: none;
+    font-size: 2rem;
+    padding: 12px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul i{
+    margin-right: 1rem;
+}
