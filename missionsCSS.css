@@ -1,9 +1,17 @@
 :root {
     /* font-size: 63.5%; */
 }
+
 * {
     font-family: Ubuntu, Arial, Helvetica, sans-serif;
     margin: 0px;
+}
+
+.bg, html {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background: linear-gradient(135deg, orange, #D83F31);
 }
 
 header {
@@ -42,33 +50,61 @@ header a:hover,
     color: orange;
 }
 
-header .container {
+header .container-fluid {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100px;
 }
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* .todo-app button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+} */
 
 i {
     font-size: 3.2rem;
 }
-li i{
+
+li i {
     font-size: 2rem;
 }
 
 
-ul li{
+ul li {
     list-style: none;
     font-size: 2rem;
     padding: 12px;
     user-select: none;
     cursor: pointer;
     position: relative;
+    display: flex;
+    align-items: center;
 }
-ul li.checked{
+ul li .card{
+    width: 100%;
+}
+
+
+ul li.checked {
     color: #555;
     text-decoration: line-through;
+    
+    margin-right: auto;
 }
-ul i{
+
+ul i {
     margin-right: 1rem;
 }

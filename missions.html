@@ -39,32 +39,59 @@
         </div> -->
     <div class="bg">
         <header>
-            <div class="container">
-                <a href="#" class="navbr-brand">busy monkey</a>
+            <div class="container-xl container-fluid">
+                <a href="index.html" class="navbr-brand">busy monkey</a>
                 <div class="nav">
-                    <a href="index.html">bananas</a>
-                    <a href="#">missions</a>
-                    <a href="#">ne pridumal</a>
+                    <a href="index.html"><i class="fa-solid fa-stopwatch"></i></a>
+                    <a href="#"><i class="fa-solid fa-clipboard-list"></i></a>
+                    <a href="#"><i class="fa-solid fa-sack-dollar"></i></a>
+                    <a href="#"><i class="fa-solid fa-user"></i></a>
                 </div>
-                <a href="#"><img src="img/accpng.png" alt="account"></a>
             </div>
         </header>
 
-        <div class="todo-app">
-            <h2>Missions List <i class="fa-solid fa-clipboard-list"></i></h2>
-            <div class="row">
-                <input type="text" id="input-box" placeholder="Add your mission">
-                <button onclick="addMission()">Add</button>
+        <div class="container">
+            <div class="todo-app">
+                <h1 class="text-center m-5">Missions List <i class="fa-solid fa-clipboard-list"></i></h1>
+                <div class="d-flex flex-wrap justify-content-center">
+                    <div class="input-group w-50 text-center">
+                        <input class="form-control" type="text" id="title" placeholder="Add your mission title">
+                    </div>
+                    
+                    <div class="input-group w-25">
+                        <label class="input-group-text">Level</label>
+                        <select class="form-select form-select" aria-label="Importance" id="level">
+                            <option selected>Underfined</option>
+                            <option value="Easy">Easy</option>
+                            <option value="Hard">Hard</option>
+                            <option value="Imposible">Imposible</option>
+                          </select>
+                    </div>
+                    <div class="input-group w-25">
+                        <label class="input-group-text">Importance</label>
+                        <select class="form-select form-select" aria-label="Importance" id="impt">
+                            <option selected>Underfined</option>
+                            <option value="Low">Low</option>
+                            <option value="Medium">Medium</option>
+                            <option value="High">High</option>
+                          </select>
+                    </div>
+                    <div class="input-group text-center mt-3">
+                        <label class="input-group-text">Description</label>
+                        <input type="text" class="form-control" id="desc">
+                    </div>
+                    <div class="w-50 d-flex justify-content-around mt-3">
+                        <button class="btn btn-success btn-lg" onclick="addMission()">Add</button>
+                        <button class="btn btn-danger btn-lg" onclick="reset()">Delete All</button>
+                    </div>
+                </div>
+                <ul id="list-container">
+                    
+                </ul>
             </div>
-            <ul id="list-container">
-                <!-- <li class="checked"><i class="fa-regular fa-circle-check"></i></i>Task1</li>
-                <li><i class="fa-regular fa-circle"></i>Task2</li>
-                <li><i class="fa-regular fa-circle"></i>Task3</li> -->
-            </ul>
         </div>
-        
     </div>
-    
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
