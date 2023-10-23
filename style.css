@@ -145,3 +145,24 @@ section {
     min-height: 100vh;
     background:  linear-gradient(135deg, orange, #D83F31);
 }
+
+
+.timer.countdown {
+    animation: countdown 1s ease-in infinite;
+    z-index: 0;
+}
+
+@keyframes countdown {
+    0% {
+        transform: scale(1);
+        background-color: orange;
+    }
+    50% {
+        transform: scale(1.01);
+        background-color: red;
+    }
+    100% {
+        transform: scale(1);
+        background-color: orange;
+    }
+}

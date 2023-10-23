@@ -7,16 +7,20 @@ let chillTime = 5;
 let seconds = "00";
 let bananas = 0;
 
+//load standart timer
 window.onload = () => {
     document.getElementById("min").innerHTML = workTime;
     document.getElementById('sec').innerHTML = seconds;
 
     workTittle.classList.add('active');
 }
-
+//timer controller
 function start(){
     document.getElementById('start').style.display = "none";
     document.getElementById('reset').style.display = "block";
+
+    // Add this line to remove the countdown animation class
+    document.querySelector('.timer').classList.add('countdown');
 
     seconds = 59;
 
@@ -52,6 +56,7 @@ function start(){
     setInterval(timeFunction, 1000);
 }
 
+// 
 document.getElementById('currentMissionBananas').innerHTML = bananas;
 
 

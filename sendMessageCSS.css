@@ -1,0 +1,162 @@
+:root {
+    /* font-size: 63.5%; */
+}
+
+* {
+    font-family: Ubuntu, Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+.bg, html {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background: linear-gradient(135deg, orange, #D83F31);
+}
+
+header {
+    background-color: #D83F31;
+    color: white;
+    height: 100px;
+}
+
+header .navbr-brand {
+    color: white;
+    font-family: Ubuntu;
+    font-size: 42px;
+    font-weight: 800;
+}
+
+header .nav {
+    display: flex;
+    justify-content: space-between;
+    min-width: 600px;
+
+}
+
+header a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+header img {
+    width: 75px;
+}
+
+header a:hover, .navbr-brand:hover {
+    color: orange;
+}
+
+header .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+i {
+  font-size: 3.2rem;
+}
+
+li i {
+  font-size: rem;
+}
+
+
+
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+
+button {
+  position: relative;
+  padding: 15px 45px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  border-radius: 15px;
+  border: 2px solid #00c2cb;
+  background: none;
+  color: #00c2cb;
+  cursor: pointer;
+  outline: none;
+  transition: 200ms;
+}
+
+button i {
+  position: absolute;
+  color: transparent; /* To hide the check icon */
+  transition: 200ms;
+}
+button:focus {
+  color: transparent;
+  outline: none;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 25px 25px;
+  border-left: 2px solid #00c2cb;
+  animation: spin 2s 500ms forwards;
+}
+@keyframes spin {
+  80% {
+    border: 2px solid transparent;
+    border-left: 2px solid #00c2cb;
+  }
+  100% {
+    transform: rotate(720deg);
+    border: 2px solid #00c2cb;
+  }
+}
+button:focus i {
+  animation: check 300ms 2300ms forwards;
+}
+
+@keyframes check {
+  to {
+    color: #00c2cb;
+  }
+}
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
