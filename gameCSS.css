@@ -1,0 +1,25 @@
+* {
+    font-family: Ubuntu, Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+.nav-item p{
+    font-size: 30px;
+}
+i {
+    font-size: 3.2rem;
+}
+.bg, html{
+    width: 100%;
+    min-height: 100vh;
+    background:  linear-gradient(135deg, orange, #D83F31);
+}
+.drag-block{
+    width: 100px;
+}
+.drag-section{
+    background-color: whitesmoke;
+    min-height: 160px;
+    border-color: black;
+    border: solid;
+}

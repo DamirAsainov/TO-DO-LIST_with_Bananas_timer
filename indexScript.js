@@ -27,7 +27,7 @@ function start(){
     let workMinutes = workTime - 1;
     let chillMinute = chillTime - 1;
 
-    breakCount = 0;
+    breakCount = 0
 
     let timeFunction = () => {
         document.getElementById('min').innerHTML = workMinutes;
@@ -56,9 +56,12 @@ function start(){
     setInterval(timeFunction, 1000);
 }
 
-// 
-document.getElementById('currentMissionBananas').innerHTML = bananas;
+document.getElementById("chill").addEventListener("mouseover", function(){
+    document.getElementById('chill').style.color = '#CF3030';
+});
+document.getElementById("chill").addEventListener("mouseout", function(){
+    document.getElementById('chill').style.color = 'black';
+});
 
 
-
-
+      
