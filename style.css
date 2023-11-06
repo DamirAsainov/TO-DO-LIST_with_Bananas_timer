@@ -3,9 +3,10 @@
     margin: 0px;
 }
 
-.nav-item p{
+.nav-item p {
     font-size: 30px;
 }
+
 i {
     font-size: 3.2rem;
 }
@@ -13,14 +14,16 @@ i {
 section {
     height: 100%;
 }
-.timer-div{
+
+.timer-div {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     height: 800px;
-    
+
 }
+
 .painer {
     display: flex;
     justify-content: space-around;
@@ -34,17 +37,20 @@ section {
     -moz-box-shadow: 0px 0px 17px 20px rgba(52, 40, 216, 0.18);
     box-shadow: 0px 0px 17px 20px rgba(43, 49, 231, 0.18);
 }
-.painer p{
+
+.painer p {
     opacity: .9;
     transition: 1s ease-in;
     font-size: 1.4rem;
     font-weight: 800;
 }
+
 .painer p.active {
     opacity: 1;
     color: #CF3030;
 }
-.timer{
+
+.timer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,7 +62,8 @@ section {
     -moz-box-shadow: 0px 0px 17px 20px rgba(223, 159, 33, 0.18);
     box-shadow: 0px 0px 17px 20px rgba(223, 159, 33, 0.18);
 }
-.circle{
+
+.circle {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,7 +72,8 @@ section {
     border-radius: 50%;
     background-color: #D9D9D9;
 }
-.circle::before{
+
+.circle::before {
     content: "";
     position: absolute;
     width: 27rem;
@@ -74,33 +82,40 @@ section {
     background-color: #CF3030;
     z-index: -1;
 }
-.time{
+
+.time {
     position: relative;
     display: flex;
 }
-.time p{
+
+.time p {
     font-size: 5.6rem;
 }
-.time p:nth-last-of-type(2){
+
+.time p:nth-last-of-type(2) {
     position: relative;
     top: -.5rem;
 }
-.controller{
-    margin-top:  rem;
+
+.controller {
+    margin-top: rem;
 }
-.controller button{
+
+.controller button {
     border: none;
     background-color: transparent;
     cursor: pointer;
 }
-.controller #reset{
+
+.controller #reset {
     display: none;
 }
 
-.bg, html{
+.bg,
+html {
     width: 100%;
     min-height: 100vh;
-    background:  linear-gradient(135deg, orange, #D83F31);
+    background: linear-gradient(135deg, orange, #D83F31);
 }
 
 
@@ -114,10 +129,12 @@ section {
         transform: scale(1);
         background-color: orange;
     }
+
     50% {
         transform: scale(1.01);
         background-color: red;
     }
+
     100% {
         transform: scale(1);
         background-color: orange;

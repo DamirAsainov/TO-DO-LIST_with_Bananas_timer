@@ -3,23 +3,43 @@
     margin: 0px;
 }
 
-.nav-item p{
+.nav-item p {
     font-size: 30px;
 }
+
 i {
     font-size: 3.2rem;
 }
-.bg, html{
+
+.bg,
+html {
     width: 100%;
     min-height: 100vh;
-    background:  linear-gradient(135deg, orange, #D83F31);
+    background: linear-gradient(135deg, orange, #D83F31);
 }
-.drag-block{
+
+.drag-block {
     width: 100px;
 }
-.drag-section{
+
+.drag-section {
     background-color: whitesmoke;
     min-height: 160px;
     border-color: black;
     border: solid;
+}
+
+#panel,
+#flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+    cursor: pointer;
+    width: auto;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
 }

@@ -2,8 +2,8 @@ const blocks = document.querySelectorAll('.drag-block')
 const bananaDiv = document.querySelector('#banana-div');
 const monkeysDiv = document.querySelector('#monkey-div');
 const button = document.createElement('button');
-var loseAudio = document.getElementById("loseAudio"); 
-var successAudio = document.getElementById("successAudio"); 
+var loseAudio = document.getElementById("loseAudio");
+var successAudio = document.getElementById("successAudio");
 
 
 
@@ -35,29 +35,35 @@ blocks.forEach(block => block.addEventListener('dragstart', drag));
 
 
 function allowDrop(ev) {
-    ev.preventDefault();
+  ev.preventDefault();
 }
 
 function drag(ev) {
-    ev.dataTransfer.setData("text", ev.target.id);
+  ev.dataTransfer.setData("text", ev.target.id);
 }
 
 function drop(ev) {
-    ev.preventDefault();
-    var data = ev.dataTransfer.getData("text");
-    ev.target.appendChild(document.getElementById(data));
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
 }
-  
+
 
 function checkContents() {
-    const bananaCount = bananaDiv.querySelectorAll('.drag-block').length;
-    const monkeyCount = monkeysDiv.querySelectorAll('.drag-block').length;
-  
-    if (bananaCount === 4 && monkeyCount === 4) {
-      alert('Bananas and Monkeys are in the right places!');
-      successAudio.play();
-    } else {
-      alert('Bananas and Monkeys are not in the right places.');
-      loseAudio.play();
-    }
+  const bananaCount = bananaDiv.querySelectorAll('.drag-block').length;
+  const monkeyCount = monkeysDiv.querySelectorAll('.drag-block').length;
+
+  if (bananaCount === 4 && monkeyCount === 4) {
+    alert('Bananas and Monkeys are in the right places!');
+    successAudio.play();
+  } else {
+    alert('Bananas and Monkeys are not in the right places.');
+    loseAudio.play();
   }
+}
+
+$(document).ready(function () {
+  $("#flip").click(function () {
+    $("#panel").slideToggle("slow");
+  });
+});

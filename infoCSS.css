@@ -6,22 +6,26 @@
     font-family: Ubuntu, Arial, Helvetica, sans-serif;
     margin: 0px;
 }
-  
-.bg, html {
+
+.bg,
+html {
     width: 100%;
     min-height: 100vh;
     height: auto;
     background: linear-gradient(135deg, orange, #D83F31);
 }
+
 .nav-item i {
     font-size: 3.2rem;
 }
-section{
+
+section {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-h1{
+
+h1 {
     font-size: 64px;
     color: #D83F31;
 }

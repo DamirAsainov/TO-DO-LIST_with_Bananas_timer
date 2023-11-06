@@ -6,8 +6,9 @@
     font-family: Ubuntu, Arial, Helvetica, sans-serif;
     margin: 0px;
 }
-  
-.bg, html {
+
+.bg,
+html {
     width: 100%;
     min-height: 100vh;
     height: auto;
@@ -33,7 +34,8 @@ ul li {
     display: flex;
     align-items: center;
 }
-ul li .card{
+
+ul li .card {
     width: 100%;
 }
 
@@ -41,7 +43,7 @@ ul li .card{
 ul li.checked {
     color: #555;
     text-decoration: line-through;
-    
+
     margin-right: auto;
 }
 
