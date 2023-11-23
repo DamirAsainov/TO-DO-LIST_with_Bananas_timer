@@ -76,8 +76,67 @@
               class="drag-block" id="5">
           </div>
         </div>
+
+
+        <div id="quiz-container" class="mt-5 mb-5">
+          <h1>Quiz Time</h1>
+          <div id="question-container"></div>
+          <div id="answer-buttons" class="btn-container"></div>
+          <button id="next-button" onclick="nextQuestion()">Next</button>
+      </div>
+
+
       </div>
     </section>
+    <footer class="awesome-footer mt-5">
+      <div class="footer-container">
+          <div class="footer-section">
+              <h3>Connect with Us</h3>
+              <ul class="social-links">
+                  <li><a href="#" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                  <li><a href="#" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                  <li><a href="#" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+              </ul>
+          </div>
+          <div class="footer-section">
+              <h3>Contact Us</h3>
+              <form id="multiStepForm">
+                  <!-- Step 1 -->
+                  <div class="step active" id="step1">
+                      <h2>Step 1</h2>
+                      <label for="name">Name:</label>
+                      <input type="text" id="name" name="name">
+                      <button type="button" onclick="nextStep()">Next</button>
+                  </div>
+          
+                  <!-- Step 2 -->
+                  <div class="step" id="step2">
+                      <h2>Step 2</h2>
+                      <label for="email">Email:</label>
+                      <input type="email" id="email" name="email">
+                      <button type="button" onclick="prevStep()">Previous</button>
+                      <button type="button" onclick="nextStep()">Next</button>
+                  </div>
+          
+                  <!-- Step 3 -->
+                  <div class="step" id="step3">
+                      <h2>Step 3</h2>
+                      <label for="message">Message:</label>
+                      <textarea id="message" name="message"></textarea>
+                      <button type="button" onclick="prevStep()">Previous</button>
+                      <button type="submit">Submit</button>
+                  </div>
+              </form>
+          </div>
+          <div class="footer-section">
+              <h3>Our Address</h3>
+              <p>25 Alikhana Bokeihana<br>Astana city<br>Kazakhstan</p>
+          </div>
+      </div>
+      <div class="copyright">
+          <p>&copy; 2023 busy monkey. All rights reserved.</p>
+      </div>
+  </footer>
   </div>
   <audio id="successAudio">
     <source src="audio/positive-notification-new-level-152480.mp3" type="audio/mpeg">

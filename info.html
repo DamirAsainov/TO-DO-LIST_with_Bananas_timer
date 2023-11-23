@@ -134,12 +134,70 @@
                     </div>
                 </div>
 
+                <div>
+                    <video id="fullscreen-video" width="500px" controls>
+                        <source src="img/I Taught an Ape How to Play Minecraft.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+
+                    
+                </div>
 
 
                 <img src="img//smart-monkey.png" alt="smart-monkey" id="main-monkey" data-tooltip="Это умная обезьяна">
+                <button id="scrollToTopBtn" onclick="scrollToTop()">Scroll To Top</button>
             </section>
 
         </div>
+        <footer class="awesome-footer">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>Connect with Us</h3>
+                    <ul class="social-links">
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <form id="multiStepForm">
+                        <!-- Step 1 -->
+                        <div class="step active" id="step1">
+                            <h2>Step 1</h2>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name">
+                            <button type="button" onclick="nextStep()">Next</button>
+                        </div>
+                
+                        <!-- Step 2 -->
+                        <div class="step" id="step2">
+                            <h2>Step 2</h2>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email">
+                            <button type="button" onclick="prevStep()">Previous</button>
+                            <button type="button" onclick="nextStep()">Next</button>
+                        </div>
+                
+                        <!-- Step 3 -->
+                        <div class="step" id="step3">
+                            <h2>Step 3</h2>
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message"></textarea>
+                            <button type="button" onclick="prevStep()">Previous</button>
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="footer-section">
+                    <h3>Our Address</h3>
+                    <p>25 Alikhana Bokeihana<br>Astana city<br>Kazakhstan</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 busy monkey. All rights reserved.</p>
+            </div>
+        </footer>
     </div>
 
 
@@ -148,5 +206,4 @@
         crossorigin="anonymous"></script>
     <script src="infoScript.js"></script>
     <script src="header.js"></script>
-
 </body>

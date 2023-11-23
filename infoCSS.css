@@ -29,3 +29,94 @@ h1 {
     font-size: 64px;
     color: #D83F31;
 }
+
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.footer-section {
+    max-width: 300px;
+}
+
+h3 {
+    color: #ffcc00;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-links li {
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label, form textarea, form input {
+    margin-bottom: 10px;
+}
+
+form textarea {
+    height: 80px;
+}
+
+form button {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #333;
+    color: #ffcc00;
+}
+
+.copyright {
+    background-color: #222;
+    color: #888;
+    text-align: center;
+    padding: 10px;
+}
+
+.step {
+    display: none;
+}
+
+.step.active {
+    display: block;
+}

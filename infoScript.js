@@ -73,4 +73,76 @@ var barChart = new Chart(barCtx, {
     }
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    const video = document.getElementById("fullscreen-video");
+
+    // Function to make the video full screen
+    function makeVideoFullScreen() {
+        if (video.requestFullscreen) {
+            video.requestFullscreen();
+        } else if (video.mozRequestFullScreen) {
+            video.mozRequestFullScreen();
+        } else if (video.webkitRequestFullscreen) {
+            video.webkitRequestFullscreen();
+        } else if (video.msRequestFullscreen) {
+            video.msRequestFullscreen();
+        }
+    }
+
+    // Call the function when the user clicks on the video
+    video.addEventListener("click", makeVideoFullScreen);
+
+
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+    // Show or hide the button based on scroll position
+    window.onscroll = function() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            scrollToTopBtn.style.display = "block";
+        } else {
+            scrollToTopBtn.style.display = "none";
+        }
+    };
+
+    // Scroll to the top when the button is clicked
+    window.scrollToTop = function() {
+        document.body.scrollTop = 0; 
+        document.documentElement.scrollTop = 0;
+    };
+});
+
+
+
+
+let currentStep = 1;
+
+function nextStep() {
+    const currentStepElement = document.getElementById(`step${currentStep}`);
+    const nextStepElement = document.getElementById(`step${currentStep + 1}`);
+
+    if (nextStepElement) {
+        currentStepElement.classList.remove("active");
+        nextStepElement.classList.add("active");
+        currentStep++;
+    }
+}
+
+function prevStep() {
+    const currentStepElement = document.getElementById(`step${currentStep}`);
+    const prevStepElement = document.getElementById(`step${currentStep - 1}`);
+
+    if (prevStepElement) {
+        currentStepElement.classList.remove("active");
+        prevStepElement.classList.add("active");
+        currentStep--;
+    }
+}
+
+document.getElementById("multiStepForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    alert("Form submitted successfully!");
+});
+
+
+
 
